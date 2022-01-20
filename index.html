@@ -18,16 +18,14 @@
         <nav class="header-nav header-container">
             <a class="link header-logo" href="/"><span class="logo-special">Web</span>Studio</a>
         <ul class=" list header-list">
-            <li class="item"> <a class="link heder-item" href="./index.html">Студия</a></li>
+            <li class="item"> <a class="link heder-item current-studio" href="./index.html">Студия</a></li>
             <li class="item"> <a class="link heder-item" href="./portfolio.html">Портфолио</a></li>
             <li class="item"> <a class="link heder-item" href="Контакты">Контакты</a></li>
         </ul>
         </nav>  
         <ul class=" list adres-list">
-              <li> <a href="" class="adres-social-link" target="_blank" rel= "noopener noreferrer" ><svg class="adres-social-icon" width="16" height="12" ><use href="./images/icons.svg#icon-envelope-hover"></use></svg></a>
-                   <a class="link header-mail" href="mailto:info@devstudio.com" target="_blank" rel= "noopener noreferrer" >info@devstudio.com</a></li> 
-              <li> <a href="" class="adres-social-link" target="_blank" rel= "noopener noreferrer" ><svg class="adres-social-icon" width="10" height="16" ><use href="./images/icons.svg#icon-smartphone"></use></svg></a>
-                  <a class="link header-tel"  href="tel:+380961111111" target="_blank" rel= "noopener noreferrer" >+38 096 111 11 11</a></li> 
+              <li> <a class="link header-mail adres-social-link" href="mailto:info@devstudio.com" target="_blank" rel= "noopener noreferrer"> <svg class="adres-social-icon" width="16" height="12" ><use href="./images/icons.svg#icon-envelope-hover"></use></svg>info@devstudio.com</a></li> 
+              <li> <a class="link header-tel adres-social-link"  href="tel:+380961111111" target="_blank" rel= "noopener noreferrer" > <svg class="adres-social-icon" width="10" height="16" ><use href="./images/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a></li> 
         </ul>   
         </div> 
     </header>
@@ -36,7 +34,7 @@
         <section class="hero"> 
             <div class="container ">
             <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-            <button type="button" class="hero-btn"><span class=" hero-btn-item">Заказать услуги</span>
+            <button type="button" class="hero-btn" data-modal-open><span class=" hero-btn-item">Заказать услуги</span>
             </button>
             </div>
         </section>
@@ -79,9 +77,19 @@
         <div class="container">
         <h2 class="make-title">Чем мы занимаемся</h2>
         <ul class="list make-list">
-            <li class="make-image"><img src="./images/we-do1.jpg" alt="работа с компьютером" width="370" height="294"> </li>
-            <li class="make-image"><img src="./images/we-do2.jpg" alt="работа с телефоном" width="370" height="294"></li>
-            <li class="make-image"><img src="./images/we-do3.jpg" alt="работа с планшетом" width="370" height="294"></li>
+            <li class="make-image"> 
+            <div class="make-animation">
+            <img src="./images/we-do1.jpg" alt="Десктопные приложения" width="370" height="294"> 
+            <p class="make-text">Десктопные приложения</p>
+            </div></li>
+            <li class="make-image">
+            <div class="make-animation">
+            <img src="./images/we-do2.jpg" alt="Мобильные приложения" width="370" height="294">
+            <p class="make-text">Мобильные приложения</p></div></li>
+            <li class="make-image">
+            <div class="make-animation">
+            <img src="./images/we-do3.jpg" alt="Дизайнерские решения" width="370" height="294">
+            <p class="make-text">Дизайнерские решения</p></div></li>
         </ul>
             </div>
     </section>
@@ -181,5 +189,11 @@
     </address>
     </div>
 </footer>
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="modal-icon" data-modal-close> <svg class="modal-icon" width="17" height="17"><use href="./images/icons.svg#icon-close"></use></svg></button>
+    </div>
+<script src="./js/modal.js"></script>
+</div>
 </body>
 </html>
