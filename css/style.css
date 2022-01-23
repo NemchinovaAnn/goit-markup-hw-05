@@ -627,6 +627,18 @@ outline: 2px solid red;
     transform: translate(-50%, -50%) rotate(0deg);
     transition: transform 250ms ;
 }
+.modal-icon-button{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border: none;
+}
 .modal-icon{
     width: 30px;
     height: 30px;
